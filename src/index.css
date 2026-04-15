@@ -2,4 +2,20 @@
     --black: #000000;
     --pink: #ff007f;
     --white: #ffffff;
+    --darker-gray: #272729;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--black);
+}
+
+body, input, textarea, button {
+    font-size: 1rem;
+    font-family: sans-serif;
 }
