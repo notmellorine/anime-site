@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom"
 
 import style from "./Header.module.css"
+
 import { SearchBar } from "../SearchBar"
+import { UserIcon } from "../Icons"
 
 const Header = () => {
     return (
@@ -13,7 +15,7 @@ const Header = () => {
                 </h1>
             </Link>
             <SearchBar />
-            <h2>Login</h2>
+            <UserIcon />
         </div>
     )
 }
