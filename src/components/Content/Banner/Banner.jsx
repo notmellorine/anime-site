@@ -1,9 +1,8 @@
-import style from './Content.module.css';
+import style from './Banner.module.css';
 
-const Content = () => {
+const Banner = () => {
     return (
-        <div className={style.Content}>
-            <div className={style.banner}>
+        <div className={style.banner}>
                 <img src='src\assets\img-home.png' alt='home' className={style.bannerImg} />
                 <div className={style.bannerContent}>
                     <h1><span>NEO GENESIS:</span> RISING</h1>
@@ -14,8 +13,7 @@ const Content = () => {
                     </div>
                 </div>
             </div>
-        </div>
     )
 }
 
-export { Content };
+export { Banner };
