@@ -1,7 +1,6 @@
 .PopularHome {
     display: flex;
     flex-direction: column;
-    /* background-color: blue; */
     width: 100%;
     height: 15rem;
 }

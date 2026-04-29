@@ -44,7 +44,7 @@ const PopularHome = () => {
     // const animeNameList = popularAnime.map(animes => <p>{animes.animeName}</p>)
 
     const animePopularList = popularAnime.map(anime =>
-        <div className={style.animePop} style={{backgroundImage: `url(${anime.img})`}}>
+        <div key={anime.id} className={style.animePop} style={{backgroundImage: `url(${anime.img})`}}>
                 <p>{anime.rate}</p>
                 <p>{anime.animeName}</p>
             </div>
