@@ -9,7 +9,14 @@
 .PopularHome h2 {
     color: var(--white);
 }
-.animePop{
+
+.animeRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.animePop {
+    display: flex;
     background-image: url("https://i.redd.it/xc7nhtys0f3f1.gif");
     background-repeat: no-repeat;
     background-size: 20rem 10rem;
