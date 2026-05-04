@@ -8,7 +8,7 @@ import style from './HomeContent.module.css';
 
 const HomeContent = () => {
     return (
-        <div className={style.Content}>
+        <div className={style.HomeContent}>
             <Banner />
             <RecentEpisodesHome />
             <RecentAnimeHome />
