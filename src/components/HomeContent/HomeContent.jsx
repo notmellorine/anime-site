@@ -4,9 +4,9 @@ import { RecentAnimeHome } from './RecentAnimeHome';
 import { RecentEpisodesHome } from './RecentEpisodesHome';
 import { RecentFilmsHome } from './RecentFilmsHome';
 
-import style from './Content.module.css';
+import style from './HomeContent.module.css';
 
-const Content = () => {
+const HomeContent = () => {
     return (
         <div className={style.Content}>
             <Banner />
@@ -18,4 +18,4 @@ const Content = () => {
     )
 }
 
-export { Content };
+export { HomeContent };

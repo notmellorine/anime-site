@@ -5,6 +5,10 @@
     height: 15rem;
 }
 
+.RecentEpisodesHome:hover {
+    cursor: pointer;
+}
+
 .RecentEpisodesHome h2 {
     color: var(--white);
 }

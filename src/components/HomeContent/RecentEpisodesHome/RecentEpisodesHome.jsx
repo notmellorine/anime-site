@@ -42,10 +42,12 @@ const RecentEpisodesHome = () => {
     ]
 
     const episodesRecentList = episodesAnime.map(episode =>
-        <div key={episode.id} className={style.episodesRec} style={{backgroundImage: `url(${episode.img})`}}>
+        <a>
+            <div key={episode.id} className={style.episodesRec} style={{backgroundImage: `url(${episode.img})`}}>
                 <p>{episode.episodeNumber}</p>
                 <p>{episode.animeName}</p>
             </div>
+        </a>
     )
 
     return (

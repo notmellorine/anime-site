@@ -1,8 +1,12 @@
+import style from './Footer.module.css';
+
 const Footer = () => {
     return (
-        <h2>
-            Footer
-        </h2>
+        <div className={style.Footer}>
+            <h2>
+                Footer
+            </h2>
+        </div>
     )
 }
 
