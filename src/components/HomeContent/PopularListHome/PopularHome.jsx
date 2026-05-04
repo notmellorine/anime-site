@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import style from './PopularHome.module.css'
 
 const PopularHome = () => {
@@ -44,18 +45,20 @@ const PopularHome = () => {
     // const animeNameList = popularAnime.map(animes => <p>{animes.animeName}</p>)
 
     const animePopularList = popularAnime.map(anime =>
-        <div key={anime.id} className={style.animePop} style={{backgroundImage: `url(${anime.img})`}}>
-                <p>{anime.rate}</p>
-                <p>{anime.animeName}</p>
-            </div>
+        <Link key={anime.id} to={`/animePop/${anime.id}`}>
+            <div className={style.animePop} style={{backgroundImage: `url(${anime.img})`}}>
+                    <p>{anime.rate}</p>
+                    <p>{anime.animeName}</p>
+            </div> 
+        </Link>
     )
 
     return (
         <div className={style.PopularHome}>
             <h2>POPULARES NO MOMENTO</h2>
-            <div className={style.animeRow}>
-                {animePopularList}  
-            </div>
+                <div className={style.animeRow}>
+                    {animePopularList}  
+                </div>
         </div>
     )
 }

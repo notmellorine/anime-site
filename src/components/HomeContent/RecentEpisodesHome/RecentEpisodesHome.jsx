@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import style from './RecentEpisodesHome.module.css'
 
 const RecentEpisodesHome = () => {
@@ -42,20 +43,22 @@ const RecentEpisodesHome = () => {
     ]
 
     const episodesRecentList = episodesAnime.map(episode =>
-        <a>
-            <div key={episode.id} className={style.episodesRec} style={{backgroundImage: `url(${episode.img})`}}>
+        <Link key={episode.id} to={`/episode/${episode.id}`}>
+            <div className={style.episodesRec} style={{backgroundImage: `url(${episode.img})`}}>
                 <p>{episode.episodeNumber}</p>
                 <p>{episode.animeName}</p>
             </div>
-        </a>
+        </Link>
     )
 
     return (
         <div className={style.RecentEpisodesHome}>
             <h2>ÚLTIMOS EPISÓDIOS</h2>
-            <div className={style.episodesRow}>
-                {episodesRecentList}  
-            </div>
+            <Link to="">
+                <div className={style.episodesRow}>
+                    {episodesRecentList}  
+                </div>
+            </Link>
         </div>
     )
 }

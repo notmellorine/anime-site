@@ -1,12 +1,12 @@
 import { Footer, Header } from "../../components";
 
-const Episodes = () => {
+const AnimePage = () => {
     return (
         <>
-        <Header />
-        <Footer />
+            <Header />
+            <Footer />
         </>
     )
 }
 
-export { Episodes };
+export { AnimePage };
