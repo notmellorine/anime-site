@@ -1,0 +1,15 @@
+.AnimeContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.AnimeContent h1, p {
+    color: var(--white);
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: row;
+}

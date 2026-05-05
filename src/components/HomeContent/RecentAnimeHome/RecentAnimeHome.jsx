@@ -7,7 +7,7 @@ const RecentAnimeHome = () => {
 
 
     const animeRecentList = RecentAnime.map(anime =>
-        <Link key={anime.id} to={`/animeRec/${anime.id}`}>
+        <Link key={anime.id} to={`/anime/${anime.animeName}`}>
             <div className={style.animeRec} style={{backgroundImage: `url(${anime.img})`}}>
                 <p>{anime.rate}</p>
                 <p>{anime.animeName}</p>
