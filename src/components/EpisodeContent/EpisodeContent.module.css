@@ -1,0 +1,7 @@
+.EpisodeContent {
+    display: flexbox;
+}
+
+.EpisodeContent h1, h2 {
+    color: var(--white);
+}

@@ -4,7 +4,6 @@ import { PopularAnime } from '../../../Helpers'
 
 const PopularHome = () => {
 
-    // const popularAnime = [
     //     {
     //         id: 1,
     //         animeName: "Atelier of Witch Hat",
